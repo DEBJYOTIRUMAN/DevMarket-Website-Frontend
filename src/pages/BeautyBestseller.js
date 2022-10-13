@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 const BeautyBestseller = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('/api/products/bestseller/beauty')
+        fetch('https://devmarket-nknv.onrender.com/api/products/bestseller/beauty')
             .then(response => response.json())
             .then(products => {
                 setProducts(products);

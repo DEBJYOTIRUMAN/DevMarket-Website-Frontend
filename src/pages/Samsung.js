@@ -7,7 +7,7 @@ import image4 from '../images/samsungpage4.jpg';
 const Samsung = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('/api/products/specific/category/samsungmobiles')
+        fetch('https://devmarket-nknv.onrender.com/api/products/specific/category/samsungmobiles')
             .then(response => response.json())
             .then(products => {
                 setProducts(products);

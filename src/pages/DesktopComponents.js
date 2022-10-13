@@ -11,7 +11,7 @@ import image6 from '../images/componentspage6.jpg';
 const DesktopComponents = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('/api/products/specific/category/components')
+        fetch('https://devmarket-nknv.onrender.com/api/products/specific/category/components')
             .then(response => response.json())
             .then(products => {
                 setProducts(products);

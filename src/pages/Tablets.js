@@ -9,7 +9,7 @@ import image5 from '../images/tabletspage5.jpg';
 const Tablets = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('/api/products/specific/category/tablets')
+        fetch('https://devmarket-nknv.onrender.com/api/products/specific/category/tablets')
             .then(response => response.json())
             .then(products => {
                 setProducts(products);

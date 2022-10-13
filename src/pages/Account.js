@@ -53,7 +53,7 @@ const Account = () => {
     }
     
 
-    fetch("/api/register", {
+    fetch("https://devmarket-nknv.onrender.com/api/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -117,7 +117,7 @@ const Account = () => {
       setReady(false);
       return;
     }
-    fetch("/api/me", {
+    fetch("https://devmarket-nknv.onrender.com/api/me", {
       method: "GET",
       headers: {
         "Authorization": `Bearer ${Token.access_token}`,

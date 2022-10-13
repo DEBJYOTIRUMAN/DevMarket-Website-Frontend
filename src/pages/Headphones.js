@@ -10,7 +10,7 @@ import image6 from '../images/headphonespage6.jpg';
 const Headphones = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('/api/products/specific/category/headphones')
+        fetch('https://devmarket-nknv.onrender.com/api/products/specific/category/headphones')
             .then(response => response.json())
             .then(products => {
                 setProducts(products);

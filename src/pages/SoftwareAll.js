@@ -5,7 +5,7 @@ const SoftwareAll = () => {
 
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('/api/products/specific/softwares')
+        fetch('https://devmarket-nknv.onrender.com/api/products/specific/softwares')
             .then(response => response.json())
             .then(products => {
                 setProducts(products);

@@ -25,7 +25,7 @@ const Cart = () => {
       return;
     }
 
-    fetch("/api/products/cart-items", {
+    fetch("https://devmarket-nknv.onrender.com/api/products/cart-items", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

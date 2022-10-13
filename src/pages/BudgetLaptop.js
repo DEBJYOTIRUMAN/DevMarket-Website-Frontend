@@ -8,7 +8,7 @@ import image3 from '../images/budgetlaptoppage3.jpg';
 const BudgetLaptop = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('/api/products/specific/category/budgetlaptop')
+        fetch('https://devmarket-nknv.onrender.com/api/products/specific/category/budgetlaptop')
             .then(response => response.json())
             .then(products => {
                 setProducts(products);

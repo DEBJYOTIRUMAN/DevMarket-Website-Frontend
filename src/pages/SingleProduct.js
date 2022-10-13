@@ -8,7 +8,7 @@ const SingleProduct = () => {
   const [isAdding, setIsAdding] = useState(false);
   const { cart, setCart } = useContext(CartContext);
   useEffect(() => {
-    fetch(`/api/products/${params._id}`)
+    fetch(`https://devmarket-nknv.onrender.com/api/products/${params._id}`)
       .then((res) => res.json())
       .then((product) => {
         setProduct(product);

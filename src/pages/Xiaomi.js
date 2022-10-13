@@ -9,7 +9,7 @@ import image6 from '../images/mipage6.jpg';
 const Xiaomi = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('/api/products/specific/category/mimobiles')
+        fetch('https://devmarket-nknv.onrender.com/api/products/specific/category/mimobiles')
             .then(response => response.json())
             .then(products => {
                 setProducts(products);

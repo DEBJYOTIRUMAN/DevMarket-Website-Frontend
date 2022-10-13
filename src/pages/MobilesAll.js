@@ -5,7 +5,7 @@ const MobilesAll = () => {
 
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('/api/products/specific/mobiles')
+        fetch('https://devmarket-nknv.onrender.com/api/products/specific/mobiles')
             .then(response => response.json())
             .then(products => {
                 setProducts(products);

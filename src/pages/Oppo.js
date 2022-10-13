@@ -9,7 +9,7 @@ import image5 from '../images/oppopage5.jpg';
 const Oppo = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('/api/products/specific/category/oppomobiles')
+        fetch('https://devmarket-nknv.onrender.com/api/products/specific/category/oppomobiles')
             .then(response => response.json())
             .then(products => {
                 setProducts(products);

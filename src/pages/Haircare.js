@@ -11,7 +11,7 @@ import image7 from '../images/haircarepage7.jpg';
 const Haircare = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('/api/products/specific/category/haircare')
+        fetch('https://devmarket-nknv.onrender.com/api/products/specific/category/haircare')
             .then(response => response.json())
             .then(products => {
                 setProducts(products);

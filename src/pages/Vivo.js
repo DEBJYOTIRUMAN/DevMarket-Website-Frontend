@@ -8,7 +8,7 @@ import image4 from '../images/vivopage4.jpg';
 const Vivo = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('/api/products/specific/category/vivomobiles')
+        fetch('https://devmarket-nknv.onrender.com/api/products/specific/category/vivomobiles')
             .then(response => response.json())
             .then(products => {
                 setProducts(products);

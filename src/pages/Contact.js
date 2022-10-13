@@ -11,7 +11,7 @@ const Contact = () => {
     if (!submit) {
       return;
     }
-    fetch("/api/contact", {
+    fetch("https://devmarket-nknv.onrender.com/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

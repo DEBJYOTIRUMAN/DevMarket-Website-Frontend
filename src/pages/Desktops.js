@@ -10,7 +10,7 @@ import image6 from '../images/desktoppage6.jpg';
 const Desktops = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('/api/products/specific/category/desktops')
+        fetch('https://devmarket-nknv.onrender.com/api/products/specific/category/desktops')
             .then(response => response.json())
             .then(products => {
                 setProducts(products);

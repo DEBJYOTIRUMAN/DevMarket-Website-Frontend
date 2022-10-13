@@ -146,7 +146,7 @@ const SearchPage = () => {
             return;
         }
         else {
-            fetch(`/api/products/search/${search.trim()}`)
+            fetch(`https://devmarket-nknv.onrender.com/api/products/search/${search.trim()}`)
             .then((res) => res.json())
             .then((products) => {
                 setProducts(products);

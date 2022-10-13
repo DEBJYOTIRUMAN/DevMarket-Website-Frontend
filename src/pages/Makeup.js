@@ -13,7 +13,7 @@ import image8 from '../images/makeuppage8.jpg';
 const Makeup = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('/api/products/specific/category/makeup')
+        fetch('https://devmarket-nknv.onrender.com/api/products/specific/category/makeup')
             .then(response => response.json())
             .then(products => {
                 setProducts(products);

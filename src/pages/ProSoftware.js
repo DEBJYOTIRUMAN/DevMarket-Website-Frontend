@@ -8,7 +8,7 @@ import image5 from '../images/prosoftware5.jpg';
 const ProSoftware = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('/api/products/specific/category/premiumapps')
+        fetch('https://devmarket-nknv.onrender.com/api/products/specific/category/premiumapps')
             .then(response => response.json())
             .then(products => {
                 setProducts(products);

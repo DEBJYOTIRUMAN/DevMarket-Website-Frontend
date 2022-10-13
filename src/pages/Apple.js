@@ -6,7 +6,7 @@ import image3 from '../images/applepage3.jpg';
 const Apple = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('/api/products/specific/category/applemobiles')
+        fetch('https://devmarket-nknv.onrender.com/api/products/specific/category/applemobiles')
             .then(response => response.json())
             .then(products => {
                 setProducts(products);

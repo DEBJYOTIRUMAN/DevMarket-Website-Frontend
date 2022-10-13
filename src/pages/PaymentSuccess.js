@@ -33,7 +33,7 @@ const PaymentSuccess = () => {
     if(!cart.items){
       return;
     }
-    fetch("/api/order", {
+    fetch("https://devmarket-nknv.onrender.com/api/order", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -54,7 +54,7 @@ const PaymentSuccess = () => {
     if(!cart.items){
       return;
     }
-    fetch("/api/user-cart/delete", {
+    fetch("https://devmarket-nknv.onrender.com/api/user-cart/delete", {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${Token.access_token}`,

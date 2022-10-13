@@ -8,7 +8,7 @@ import image5 from '../images/professionalslaptoppage5.jpg';
 const ProfessionalsLaptop = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('/api/products/specific/category/professionalslaptop')
+        fetch('https://devmarket-nknv.onrender.com/api/products/specific/category/professionalslaptop')
             .then(response => response.json())
             .then(products => {
                 setProducts(products);

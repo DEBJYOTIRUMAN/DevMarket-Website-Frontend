@@ -16,7 +16,7 @@ const Success = () => {
     if (!Token.access_token) {
       return;
     }
-    fetch("/api/order", {
+    fetch("https://devmarket-nknv.onrender.com/api/order", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${Token.access_token}`,
@@ -41,7 +41,7 @@ const Success = () => {
     if (!Token.access_token) {
       return;
     }
-    fetch("/api/user-cart", {
+    fetch("https://devmarket-nknv.onrender.com/api/user-cart", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

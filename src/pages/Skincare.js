@@ -14,7 +14,7 @@ import image10 from '../images/skincarepage10.jpg';
 const Skincare = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('/api/products/specific/category/skincare')
+        fetch('https://devmarket-nknv.onrender.com/api/products/specific/category/skincare')
             .then(response => response.json())
             .then(products => {
                 setProducts(products);

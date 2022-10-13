@@ -8,7 +8,7 @@ import image5 from '../images/antiviruspage5.jpg';
 const Antivirus = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('/api/products/specific/category/antivirus')
+        fetch('https://devmarket-nknv.onrender.com/api/products/specific/category/antivirus')
             .then(response => response.json())
             .then(products => {
                 setProducts(products);

@@ -43,7 +43,7 @@ const SignIn = () => {
       return;
     }
 
-    fetch("/api/login", {
+    fetch("https://devmarket-nknv.onrender.com/api/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -73,7 +73,7 @@ const SignIn = () => {
       return;
     }
     
-    fetch("/api/me", {
+    fetch("https://devmarket-nknv.onrender.com/api/me", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${Token.access_token}`,
@@ -90,7 +90,7 @@ const SignIn = () => {
     if (!Token.access_token) {
       return;
     }
-    fetch("/api/user-cart", {
+    fetch("https://devmarket-nknv.onrender.com/api/user-cart", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${Token.access_token}`,

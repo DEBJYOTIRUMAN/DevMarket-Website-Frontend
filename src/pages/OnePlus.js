@@ -8,7 +8,7 @@ import image4 from '../images/onepluspage4.jpg';
 const OnePlus = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('/api/products/specific/category/oneplusmobiles')
+        fetch('https://devmarket-nknv.onrender.com/api/products/specific/category/oneplusmobiles')
             .then(response => response.json())
             .then(products => {
                 setProducts(products);

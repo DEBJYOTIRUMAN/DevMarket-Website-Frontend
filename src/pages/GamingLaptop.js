@@ -8,7 +8,7 @@ import image5 from '../images/gaminglaptoppage5.jpg';
 const GamingLaptop = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('/api/products/specific/category/gaminglaptop')
+        fetch('https://devmarket-nknv.onrender.com/api/products/specific/category/gaminglaptop')
             .then(response => response.json())
             .then(products => {
                 setProducts(products);

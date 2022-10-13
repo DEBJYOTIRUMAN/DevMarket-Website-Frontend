@@ -157,7 +157,7 @@ const App = () => {
         if (!("refresh_token" in Token)) {
             return;
         }  
-    fetch("/api/refresh", {
+    fetch("https://devmarket-nknv.onrender.com/api/refresh", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
