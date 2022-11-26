@@ -36,7 +36,6 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://devmarket-nknv.onrender.com",
   "devDependencies": {
     "cross-env": "^7.0.3"
   }
